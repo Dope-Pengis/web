@@ -7,6 +7,10 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^5.0.2",
+    "@vicons/carbon": "^0.12.0",
+    "@vicons/utils": "^0.1.4",
+    "chart.js": "^3.7.1",
     "http-server": "^14.1.0",
     "nuxt3": "latest"
   },
