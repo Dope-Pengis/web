@@ -9,7 +9,11 @@
     <slot />
   </button>-->
   <button
-    class="bg-blue-700 px-6 py-3 text-white font-Inter font-medium text-lg rounded-xl hover:bg-blue-800 duration-300"
+    class="px-6 py-3 text-white font-Inter font-medium text-lg rounded-xl duration-300"
+    :class="{
+      'bg-darkpengiblue': primary,
+      'hover:bg-blue-800': primary,
+    }"
   >
     <slot />
   </button>
