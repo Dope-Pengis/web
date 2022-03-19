@@ -10,7 +10,7 @@
   </button>-->
   <button
     v-if="!to"
-    class="px-6 py-3 text-white font-Inter font-medium text-lg rounded-xl duration-300"
+    class="px-6 py-3 text-white font-Inter font-medium text-lg rounded-xl duration-300 hover:transform hover:scale-105"
     :class="{
       'bg-darkpengiblue': primary,
       'hover:bg-blue-800': primary,
@@ -25,7 +25,7 @@
   </button>
   <NuxtLink
     v-else
-    class="px-6 py-3 text-white font-Inter font-medium text-lg rounded-xl duration-300"
+    class="px-6 py-3 text-white font-Inter font-medium text-lg rounded-xl duration-300 hover:transform hover:scale-105"
     :class="{
       'bg-darkpengiblue': primary,
       'hover:bg-blue-800': primary,

@@ -1,9 +1,9 @@
 <template>
-  <h2 class="text-xl font-Inter font-semibold text-center text-ebtn">$PENGI</h2>
+  <h2 class="text-xl font-Inter font-semibold text-center text-ebtn mt-24">$PENGI</h2>
   <h1 class="text-4xl font-Inter font-bold text-center text-egfont">
     Tokenomics
   </h1>
-  <div class="flex flex-row gap-x-48 relative my-36">
+  <div class="flex flex-row gap-x-48 relative my-32">
     <div class="flex flex-col">
       <div class="flex justify-center items-center mb-10 h-12">
         <transition name="fade" mode="out-in">
