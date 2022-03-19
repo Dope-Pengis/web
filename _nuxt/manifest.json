@@ -1,10 +1,53 @@
 {
   "node_modules/nuxt3/dist/app/entry.mjs": {
-    "file": "entry-967f5f97.mjs",
+    "file": "entry-40ba42fc.mjs",
     "src": "node_modules/nuxt3/dist/app/entry.mjs",
     "isEntry": true,
+    "dynamicImports": [
+      "pages/index.vue",
+      "pages/story.vue"
+    ],
     "css": [
-      "entry.55a89c1f.css"
+      "entry.6ec9b17b.css"
+    ],
+    "assets": [
+      "water.3f6cd650.png",
+      "solana-logo.3d340110.svg",
+      "Inter.66b46392.ttf"
+    ]
+  },
+  "pages/index.vue": {
+    "file": "index-dc535bb5.mjs",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ],
+    "dynamicImports": [
+      "layouts/default.vue"
+    ],
+    "assets": [
+      "dope-pengis-next-gen.a543c319.png"
+    ]
+  },
+  "pages/story.vue": {
+    "file": "story-e44a92df.mjs",
+    "src": "pages/story.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ]
+  },
+  "layouts/default.vue": {
+    "file": "default-86481f42.mjs",
+    "src": "layouts/default.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt3/dist/app/entry.mjs"
+    ],
+    "assets": [
+      "dope-pengis-g.4ff203ed.png",
+      "solana.ccdc4167.svg"
     ]
   }
 }
