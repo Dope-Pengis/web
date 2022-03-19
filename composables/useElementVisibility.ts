@@ -32,7 +32,7 @@ export function useElementVisibility(
       case "none":
         return 0;
       case "middle":
-        return winHeight / 2 || 0;
+        return winHeight / 3 || 0;
       case "bottom":
         return winHeight || 0;
     }
