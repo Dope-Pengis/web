@@ -19,7 +19,7 @@
       </NuxtLink>
       <a class="text-efont font-medium text-lg font-Inter">Utility</a>
       <NuxtLink
-        class="bg-ebtn px-6 py-2 text-efont font-medium rounded-md"
+        class="bg-ebtn px-6 py-2 text-efont font-medium rounded-md hover:bg-eyellow duration-300"
         to="https://app.dopepengis.com"
       >
         Launch App

@@ -13,9 +13,13 @@
     :class="{
       'bg-darkpengiblue': primary,
       'hover:bg-blue-800': primary,
+      'bg-ebtn': secondary,
+      'hover:bg-eyellow': secondary,
     }"
   >
-    <slot />
+    <div class="flex flex-row items-center justify-center gap-x-2">
+      <slot />
+    </div>
   </button>
 </template>
 
