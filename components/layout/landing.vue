@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row items-center h-auto mt-32 mb-32">
+  <div class="flex flex-row items-center h-auto mt-32 mb-32 justify-between">
     <div class="w-6 flex flex-col pt-24">
       <p class="transform -rotate-90 font-medium text-efont">@DopePengis</p>
       <div class="h-14 w-0.5 bg-efont mx-auto my-2"></div>
@@ -50,7 +50,7 @@
         </DopeButton>
       </div>
     </div>
-    <div class="relative w-full top-28 h-96 flex justify-center">
+    <div class="relative top-28 h-96 flex justify-center w-1/2">
       <div class="absolute">
         <img
           class="h-32 w-32 animate-[floating_21s_ease_infinite_reverse] absolute bottom-2"
