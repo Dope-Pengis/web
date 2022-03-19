@@ -23,7 +23,7 @@
     </div>
     <div class="w-full bg-southpole bg-center bg-cover bg-no-repeat bg-fixed">
       <div class="backdrop-blur-lg w-full bg-black bg-opacity-40">
-        <DopeContainer class="flex-col">
+        <DopeContainer class="flex-col" id="roadmap">
           <DopeRoadmap />
         </DopeContainer>
       </div>

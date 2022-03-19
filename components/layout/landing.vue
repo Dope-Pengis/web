@@ -28,18 +28,31 @@
         with all 1111!
       </h2>
       <div class="flex flex-row gap-x-5 mt-10">
-        <DopeButton custom to="https://discord.dopepengis.com" class="animate-float">
+        <DopeButton
+          custom
+          to="https://discord.dopepengis.com"
+          class="animate-float"
+        >
           Join Discord
           <Icon>
             <DirectLink />
           </Icon>
         </DopeButton>
-        <DopeButton secondary to="https://whitepaper.dopepengis.com" class="animate-[floating_ease-out_18s_infinite_alternate]">
+        <DopeButton
+          secondary
+          to="https://whitepaper.dopepengis.com"
+          class="animate-[floating_ease-out_18s_infinite_alternate]"
+        >
           Whitepaper
           <Icon>
             <DirectLink />
           </Icon>
         </DopeButton>
+      </div>
+    </div>
+    <div class="relative w-full h-40">
+      <div class="absolute animate-float right-36">
+        <img src="~~/assets/img/pengi-full.png" class="max-w-lg" />
       </div>
     </div>
   </div>
