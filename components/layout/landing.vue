@@ -48,19 +48,22 @@
           class="h-32 w-32 animate-[floating_21s_ease_infinite_reverse] absolute bottom-2"
           src="~~/assets/img/ice01.png"
         />
-        <div
-          class="h-24 w-24 bg-white animate-[floating_19s_ease_infinite_alternate] absolute bottom-32 left-20"
-        ></div>
+        <img
+          src="~~/assets/img/ice02.png"
+          class="h-32 w-32 animate-[floating_19s_ease_infinite_alternate] absolute bottom-32 left-16"
+        />
         <img
           src="~~/assets/img/pengi-full.png"
           class="max-w-lg animate-[floating_14s_ease_infinite_alternate]"
         />
-        <div
-          class="h-24 w-24 bg-white animate-[floating_15s_ease_infinite] absolute bottom-24 right-0"
-        ></div>
-        <div
-          class="h-24 w-24 bg-white animate-[floating_21s_ease_infinite_reverse] absolute -bottom-10 right-28"
-        ></div>
+        <img
+          src="~~/assets/img/ice03.png"
+          class="h-32 w-32 animate-[floating_12s_ease_infinite] absolute bottom-20 right-5"
+        />
+        <img
+          src="~~/assets/img/ice04.png"
+          class="h-40 w-36 animate-[floating_21s_ease_infinite] absolute -bottom-11 right-20"
+        />
       </div>
     </div>
   </div>
