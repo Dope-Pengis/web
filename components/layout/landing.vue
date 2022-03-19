@@ -50,9 +50,25 @@
         </DopeButton>
       </div>
     </div>
-    <div class="relative w-full h-40">
-      <div class="absolute animate-float right-36">
-        <img src="~~/assets/img/pengi-full.png" class="max-w-lg" />
+    <div class="relative w-full top-28 h-96 flex justify-center">
+      <div class="absolute">
+        <img
+          class="h-32 w-32 animate-[floating_21s_ease_infinite_reverse] absolute bottom-2"
+          src="~~/assets/img/ice01.png"
+        />
+        <div
+          class="h-24 w-24 bg-white animate-[floating_19s_ease_infinite_alternate] absolute bottom-32 left-20"
+        ></div>
+        <img
+          src="~~/assets/img/pengi-full.png"
+          class="max-w-lg animate-[floating_14s_ease_infinite_alternate]"
+        />
+        <div
+          class="h-24 w-24 bg-white animate-[floating_15s_ease_infinite] absolute bottom-24 right-0"
+        ></div>
+        <div
+          class="h-24 w-24 bg-white animate-[floating_21s_ease_infinite_reverse] absolute -bottom-10 right-28"
+        ></div>
       </div>
     </div>
   </div>
