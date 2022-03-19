@@ -3,54 +3,9 @@
     <!-- landing -->
     <div class="w-full hero-glam">
       <DopeContainer class="pt-8 flex-col">
-        <Navigation />
+        <DopeNavigation />
         <!--<div class="flex flex-row items-center h-auto mt-56 mb-72">-->
-        <div class="flex flex-row items-center h-auto mt-56 mb-32">
-          <div class="w-6 flex flex-col pt-24">
-            <p class="transform -rotate-90 font-medium text-efont">
-              @DopePengis
-            </p>
-            <div class="h-14 w-0.5 bg-efont mx-auto my-2"></div>
-            <NuxtLink href="https://twitter.com/DopePengis">
-              <Icon color="#fff" size="22">
-                <LogoTwitter />
-              </Icon>
-            </NuxtLink>
-            <NuxtLink href="https://instagram.com/DopePengis">
-              <Icon color="#fff" size="22">
-                <LogoInstagram />
-              </Icon>
-            </NuxtLink>
-            <NuxtLink href="https://discord.dopepengis.com">
-              <Icon color="#fff" size="22">
-                <LogoDiscord />
-              </Icon>
-            </NuxtLink>
-          </div>
-          <div class="ml-32">
-            <h1 class="text-7xl text-efont font-bold font-Inter">Dope.</h1>
-            <h1 class="text-7xl text-ebtn font-bold font-Inter">Abondened.</h1>
-            <h1 class="text-7xl text-efont font-bold font-Inter">Pengis.</h1>
-            <h2 class="text-xl text-efont font-semibold font-Inter mt-10">
-              On their mission to arrive safely in their new world, <br />
-              with all 1111!
-            </h2>
-            <div class="flex flex-row gap-x-5 mt-10">
-              <DopeButton primary>
-                Join Discord
-                <Icon>
-                  <DirectLink />
-                </Icon>
-              </DopeButton>
-              <DopeButton secondary>
-                Whitepaper
-                <Icon>
-                  <DirectLink />
-                </Icon>
-              </DopeButton>
-            </div>
-          </div>
-        </div>
+        <DopeLanding />
       </DopeContainer>
       <span class="w-full h-96">
         <img
@@ -63,204 +18,24 @@
     <!--<div class="w-full bg-gradient-to-b from-blue-700 via-blue-500 to-gray-100">-->
     <div class="w-full bg-gradient-to-b from-darkpengiblue to-gray-100">
       <DopeContainer class="flex-col">
-        <!-- space filler-->
-        <div class="h-screen"></div>
+        <DopeVision />
       </DopeContainer>
     </div>
     <div class="w-full bg-gray-100">
       <DopeContainer class="flex-col" id="tokenomics">
-        <h2 class="text-xl font-Inter font-semibold text-center text-ebtn">
-          $PENGI
-        </h2>
-        <h1 class="text-4xl font-Inter font-bold text-center text-egfont">
-          Tokenomics
-        </h1>
-        <div class="flex flex-row gap-x-48 relative my-36">
-          <div class="flex flex-col">
-            <div class="flex justify-center items-center mb-10 h-12">
-              <transition name="fade" mode="out-in">
-                <h3
-                  class="font-Inter text-xl font-semibold text-egfont text-center"
-                  v-if="!chartInfo"
-                >
-                  $Pengi Fund
-                  <br />
-                  Allocation
-                </h3>
-                <div v-else class="flex flex-row items-center gap-x-2">
-                  <div
-                    :style="`background-color: ${chartInfo.color}`"
-                    class="h-8 w-12 block rounded-md"
-                  ></div>
-                  <span class="font-Inter text-xl font-semibold text-egfont"
-                    >{{ chartInfo.label }}: {{ chartInfo.data }}%</span
-                  >
-                </div>
-              </transition>
-            </div>
-            <UseElementVisibility
-              offset="middle"
-              v-slot="{ isVisible }"
-              @visible="viewChartIn"
-            >
-              <div
-                class="bg-gray-100 rounded-full shadow-neumorphic-circle p-10 flex justify-center items-center duration-1000"
-                :class="{
-                  'opacity-0': !isVisible,
-                  'opacity-100': isVisible,
-                }"
-              >
-                <canvas ref="chartTarget" class="h-96 w-96"></canvas>
-                <div
-                  class="absolute bg-gray-100 rounded-full shadow-neumorphic-circle-inset h-64 aspect-square flex items-center justify-center"
-                >
-                  <div
-                    class="bg-gray-100 rounded-full shadow-neumorphic-circle h-40 aspect-square flex items-center justify-center"
-                  >
-                    <img
-                      src="~~/assets/img/solana-logo.svg"
-                      class="h-20 aspect-square"
-                    />
-                  </div>
-                </div>
-              </div>
-            </UseElementVisibility>
-          </div>
-          <div>
-            <article class="font-Inter font-medium text-egfont text-xl">
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam
-              </p>
-              <br />
-              <p>
-                erat, sed diam voluptua. At vero eos et accusam et justo duo
-                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              </p>
-              <br />
-              <p>
-                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-                amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                invidunt ut labore et dolore magna aliquyam erat, sed diam
-              </p>
-              <br />
-              <p>
-                voluptua. At vero eos et accusam et justo duo dolores et ea
-                rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-                Lorem ipsum dolor sit amet.
-              </p>
-            </article>
-            <div class="flex flex-row gap-x-5 mt-5">
-              <DopeButton>
-                Whitepaper
-                <Icon>
-                  <DirectLink />
-                </Icon>
-              </DopeButton>
-              <DopeButton secondary>
-                Trade on Raydium
-
-                <Icon>
-                  <DirectLink />
-                </Icon>
-              </DopeButton>
-            </div>
-          </div>
-        </div>
+        <DopeTokenomics />
       </DopeContainer>
     </div>
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
-import "~~/assets/fonts/inter.css";
-
-import {
-  LogoDiscord,
-  LogoTwitter,
-  LogoInstagram,
-  DirectLink,
-} from "@vicons/carbon";
-import { Icon } from "@vicons/utils";
-import { Chart, DoughnutController, ArcElement } from "chart.js";
+import DopeNavigation from "~/components/navigation.vue";
 
 import DopeContainer from "~~/components/layout/container.vue";
-import DopeButton from "~~/components/button.vue";
-import UseElementVisibility from "~~/components/util/useElementVisibility";
-
-Chart.register(ArcElement);
-Chart.register(DoughnutController);
-const chartTarget = ref<HTMLCanvasElement>();
-const chartInfo = ref(null);
-let tokenomicsChart: Chart;
-
-const sleep = (time: number) => new Promise((r) => setTimeout(r, time));
-
-const viewChartIn = async (visible: boolean) => {
-  if (!tokenomicsChart) return;
-
-  if (!visible) {
-    tokenomicsChart.data.datasets = [];
-    tokenomicsChart.update();
-    return;
-  }
-
-  await sleep(400);
-  tokenomicsChart.data.datasets.push({
-    label: "My First Dataset",
-    data: [300, 50, 100],
-    backgroundColor: [
-      "rgb(133, 105, 241)",
-      "rgb(164, 101, 241)",
-      "rgb(101, 143, 241)",
-    ],
-    hoverOffset: 4,
-  });
-  tokenomicsChart.update();
-};
-
-onMounted(() => {
-  const target = chartTarget.value;
-  if (!target) return;
-
-  try {
-    tokenomicsChart = new Chart(target, {
-      type: "doughnut",
-      data: {
-        labels: ["JavaScript", "Python", "Ruby"],
-        datasets: [],
-      },
-      options: {
-        backgroundColor: "rgba(0,0,0,0)",
-        borderColor: "rgba(0,0,0,0)",
-        cutout: "70%",
-        layout: {
-          padding: 10,
-        },
-        responsive: true,
-        onHover(event, els, chart) {
-          if (els.length === 0) {
-            chartInfo.value = null;
-            return;
-          }
-          const dataIndex = els[0].index;
-          const data = chart.config.data.datasets[0].data[dataIndex];
-          const color =
-            chart.config.data.datasets[0].backgroundColor[dataIndex];
-          const label = chart.config.data.labels[dataIndex];
-          chartInfo.value = {
-            label,
-            color,
-            data,
-          };
-        },
-      },
-    });
-  } catch (e) {
-    console.error(e);
-  }
-});
+import DopeLanding from "~~/components/layout/landing.vue";
+import DopeVision from "~~/components/layout/vision.vue";
+import DopeTokenomics from "~~/components/layout/tokenomics.vue";
 </script>
 
 <style>
